@@ -808,7 +808,7 @@ type Pick<T, K extends keyof T> = {
   [P in K]: T[P];
 };
 
-type Record<K extends keyof any, T> = {
+type Record<K extends string | number | symbol, T> = {
   [P in K]: T;
 };
 ```
